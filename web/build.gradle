@@ -1,0 +1,25 @@
+plugins {
+    id 'war'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+war {
+    enabled=true
+}
+
+dependencies {
+    implementation project(':services')
+    testImplementation 'junit:junit:4.13.2'
+    implementation 'com.google.code.gson:gson:2.9.0'
+    compileOnly 'javax.servlet:javax.servlet-api:3.0.1'
+}
+
+test {
+    useJUnitPlatform()
+}

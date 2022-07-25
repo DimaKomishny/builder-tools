@@ -1,0 +1,4 @@
+rootProject.name = 'builder-tools'
+
+//include ':admin', ':services', ':utils'
+include ':admin', ':services', ':utils', ':web'
